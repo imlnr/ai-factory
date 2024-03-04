@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import OpenAI from 'openai';
 import MyName from '../components/MyName';
 import AddAttributeForm from '../components/AddAttributeForm';
 import AttributeList from '../components/AttributeList';
 import ApiKeyInput from '../components/ApiKeyInput';
-import './src/resume.css'
+import './src/resume.css';
 
 const Resumegen = () => {
     const [educationList, setEducationList] = useState([]);
@@ -12,7 +12,7 @@ const Resumegen = () => {
     const [hobbiesList, setHobbiesList] = useState([]);
     const [myName, setMyName] = useState("");
     const [response, setResponse] = useState("");
-    const [apiKey, setApiKey] = useState(process.env.OPENAI_API_KEY);
+    const [apiKey,setApiKey] = useState("");
 
     const addEducation = (newEducation) =>
         setEducationList((prevEducationList) => [
@@ -29,9 +29,8 @@ const Resumegen = () => {
 
     const getCompletion = async () => {
         const openai = new OpenAI({
-            //   apiKey: API_KEY,
             apiKey: apiKey,
-            dangerouslyAllowBrowser: true, // defaults to process.env["OPENAI_API_KEY"]
+            dangerouslyAllowBrowser: true,
         });
         const chatCompletion = await openai.chat.completions.create({
             messages: [{ role: "user", content: buildContent() }],
@@ -72,7 +71,7 @@ const Resumegen = () => {
                 <AddAttributeForm labelText="Skills" onAddAttribute={addSkills} />
                 <AttributeList attributeList={skillsList} />
                 <hr />
-                {/* <ApiKeyInput onApiKeySubmit={setApiKey} /> */}
+                <ApiKeyInput onApiKeySubmit={setApiKey} />
                 <hr />
                 <button title={"generate"} type={"submit"} onClick={getCompletion}>
                     Generate Resume
@@ -86,4 +85,4 @@ const Resumegen = () => {
     )
 }
 
-export default Resumegen
+export default Resumegen;

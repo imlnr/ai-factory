@@ -18,7 +18,7 @@ const Imagegen = () => {
             try {
                 setIsGenerating(true);
                 const response = await fetch(
-                    'http://localhost:8080/api',
+                    'https://backend-ai-app.onrender.com/api',
                     {
                         method: 'POST',
                         headers: {
