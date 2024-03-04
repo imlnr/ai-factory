@@ -78,10 +78,10 @@ const Resumegen = () => {
                     Generate Resume
                 </button>
                 <hr />
+            </div>
                 <div className='out-div-res'
                     dangerouslySetInnerHTML={{ __html: response.replaceAll("\n", "<br/>") }}
                 />
-            </div>
         </div>
     )
 }
