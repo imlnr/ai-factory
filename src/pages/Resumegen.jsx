@@ -5,13 +5,14 @@ import AddAttributeForm from '../components/AddAttributeForm';
 import AttributeList from '../components/AttributeList';
 import ApiKeyInput from '../components/ApiKeyInput';
 import './src/resume.css'
+// import 'dotenv/config'
 const Resumegen = () => {
     const [educationList, setEducationList] = useState([]);
     const [skillsList, setSkillsList] = useState([]);
     const [hobbiesList, setHobbiesList] = useState([]);
     const [myName, setMyName] = useState("");
     const [response, setResponse] = useState("");
-    const [apiKey, setApiKey] = useState(""); // State for storing the API key
+    const [apiKey, setApiKey] = useState('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'); // State for storing the API key
 
     const addEducation = (newEducation) =>
         setEducationList((prevEducationList) => [
@@ -71,13 +72,13 @@ const Resumegen = () => {
                 <AddAttributeForm labelText="Skills" onAddAttribute={addSkills} />
                 <AttributeList attributeList={skillsList} />
                 <hr />
-                <ApiKeyInput onApiKeySubmit={setApiKey} />
+                {/* <ApiKeyInput onApiKeySubmit={setApiKey} /> */}
                 <hr />
                 <button title={"generate"} type={"submit"} onClick={getCompletion}>
                     Generate Resume
                 </button>
                 <hr />
-                <div
+                <div className='out-div-res'
                     dangerouslySetInnerHTML={{ __html: response.replaceAll("\n", "<br/>") }}
                 />
             </div>

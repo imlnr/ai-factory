@@ -1,13 +1,15 @@
-.resume-cont>a {
+
+a {
     font-weight: 500;
     color: #646cff;
     text-decoration: inherit;
 }
 
-.resume-cont>a:hover {
+a:hover {
     color: #535bf2;
 }
-.main-res-cont{
+
+.main-res-cont {
     min-height: 100vh;
     border: 1px solid;
     display: flex;
@@ -15,7 +17,8 @@
     justify-content: center;
     background-color: #1a1a1a;
 }
-.resume-cont{
+
+.resume-cont {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,21 +27,24 @@
     color: white;
     /* min-height: 100vh; */
     /* border: 1px solid; */
-    /* gap: ; */
+    gap: 6px;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
-.hr{
+
+.hr {
     width: 100%;
     border-bottom: 2px solid black;
 }
 
-.resume-cont>h1 {
+h1 {
     font-size: 3.2em;
     line-height: 1.1;
 }
 
-.resume-cont>button {
+button {
     border-radius: 8px;
-    border: 1px solid transparent;
+    border: 1px solid white;
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
@@ -49,12 +55,12 @@
     transition: border-color 0.25s;
 }
 
-.resume-cont>button:hover {
+button:hover {
     border-color: #646cff;
 }
 
-.resume-cont>button:focus,
-.resume-cont>button:focus-visible {
+button:focus,
+button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -64,11 +70,11 @@
         background-color: #ffffff;
     }
 
-    .resume-cont>a:hover {
+    a:hover {
         color: #747bff;
     }
 
-    .resume-cont>button {
+    button {
         background-color: #f9f9f9;
     }
 }
@@ -79,34 +85,52 @@
     padding: 1.5em;
     will-change: filter;
     transition: filter 300ms;
-  }
-  .logo:hover {
+}
+
+.logo:hover {
     filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.react:hover {
+}
+
+.logo.react:hover {
     filter: drop-shadow(0 0 2em #61dafbaa);
-  }
-  
-  @keyframes logo-spin {
+}
+
+@keyframes logo-spin {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
+}
+
+@media (prefers-reduced-motion: no-preference) {
     a:nth-of-type(2) .logo {
-      animation: logo-spin infinite 20s linear;
+        animation: logo-spin infinite 20s linear;
     }
-  }
-  
-  .card {
+}
+
+.card {
     padding: 2em;
-  }
-  
-  .read-the-docs {
+}
+
+.read-the-docs {
     color: #888;
-  }
-  
+}
+
+input{
+    height: 30px;
+    margin-right: 5px;
+}
+hr{
+    color:white;
+    display: none;
+}
+.resume-cont>h1{
+    margin-bottom: 20px;
+}
+.out-div-res{
+    width: 100%;
+    border: 1px solid black;
+}

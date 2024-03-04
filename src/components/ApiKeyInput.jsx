@@ -12,6 +12,7 @@ const ApiKeyInput = ({ onApiKeySubmit }) => {
     <div>
       <label htmlFor="apiKey">OpenAI API Key:</label>
       <input
+      className="input-field"
         type="text"
         id="apiKey"
         value={apiKey}
