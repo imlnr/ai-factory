@@ -2,7 +2,7 @@ import Logo from '../assets/kinsta-logo.png'
 
 const Header = () => {
     return (
-        <img src={Logo} alt="Kinsta Logo" className="kinsta-logo" />
+        <img style={{width:"27%"}} src={Logo} alt="Kinsta Logo" className="kinsta-logo" />
     )
 }
 
