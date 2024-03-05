@@ -1,3 +1,7 @@
+# Description
+Welcome to AI Factory, your one-stop destination for harnessing the power of artificial intelligence to fuel creativity. This React application leverages the OpenAI API to provide a myriad of services, including image generation, resume generation, and much more.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
