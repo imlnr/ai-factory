@@ -1,6 +1,12 @@
 # Description
 Welcome to AI Factory, your one-stop destination for harnessing the power of artificial intelligence to fuel creativity. This React application leverages the OpenAI API to provide a myriad of services, including image generation, resume generation, and much more.
 
+# Features:
+[]- Image Generator: Unleash your imagination with our AI-powered image generator. Whether you're looking for inspiration or need visuals for your project, our tool can generate a wide range of images tailored to your specifications.
+
+[]- Resume Generator: Crafting the perfect resume just got easier. Our resume generator utilizes AI to create professional and personalized resumes in no time, helping you stand out in the job market.
+
+[]- And More to Come: Stay tuned as we continuously expand our offerings to include even more innovative AI-powered services, designed to streamline your creative process and enhance your productivity.
 
 # Getting Started with Create React App
 
